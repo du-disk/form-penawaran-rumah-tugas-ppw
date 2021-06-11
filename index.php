@@ -48,7 +48,7 @@
 ?>
     <div class="container text-center mt-100 min-h-200">
         <div class="alert alert-info rouded alert-dismissible fade show" role="alert">
-            Nama : <strong>Dudi Iskandar</strong> | NPM : <strong>1911106041405</strong>   
+            Nama : <strong><?=AUTHOR;?></strong> | NPM : <strong><?=NPM;?></strong> | Kelas : <strong><?=KELAS;?></strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -128,11 +128,11 @@
                                         </tr>
                                     </table>
                                 </div>
-                                <p class="fs">Dengan Tenore Pembayaran <strong class="fs-14"><?=$tenor;?></strong> tahun (<?=$total_month;?>)</p>
+                                <p class="fs">Dengan Tenore Pembayaran <strong class="fs-14"><?=$tenor;?></strong> tahun (<?=$total_month;?> Bulan)</p>
                                 <p class="fs">Sehingga cicilan anda menjadi sebesar <strong class="fs-14">Rp <?=number_format($monthly_payment);?></strong> / bulan.</p>
                             </div>
                             <div>
-                                <a class="btn btn-danger rounded btn-block" href="/" type="button">Reset</a>
+                                <a class="btn btn-danger rounded btn-block" href="./" type="button">Reset</a>
                             </div>
                         </div>
                     </div>
